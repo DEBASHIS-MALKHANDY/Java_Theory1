@@ -1,0 +1,85 @@
+Q1. What is the difference between Compiler and Interpreter?
+
+:-
+Compiler -> It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouputTo convert the HLL code to MLL code compiler will scan the HLL code only once.
+
+Interpreter =>It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouputTo convert the HLL code to MLL code interpreter will scan the HLL code mulitple times(depends on the instrcutions).
+
+Q2.What is the difference between JDK, JRE, and JVM?
+
+:-
+JDK ->
+Java Development Kit(JDK) is the core component of Java Environment and provides all the tools, executables, and binaries required to compile, debug, and execute a Java Program. JDK is a platform-specific software and that’s why we have separate installers for Windows, Mac, and Unix systems. We can say that JDK is the superset of JRE since it contains JRE with Java compiler, debugger, and core classes.
+
+JRE ->
+JRE is the implementation of JVM. It provides a platform to execute java programs. JRE consists of JVM, Java binaries, and other classes to execute any program successfully. JRE doesn’t contain any development tools such as Java compiler, debugger, JShell, etc. If you just want to execute a java program, you can install only JRE. You don’t need JDK because there is no development or compilation of java source code is required. Now that we have a basic understanding of JDK, JVM, and JRE, let’s look into the difference between them.
+
+JVM ->
+JVM is the heart of Java programming language. When we execute a Java program, JVM is responsible for converting the byte code to the machine-specific code. JVM is also platform-dependent and provides core java functions such as memory management, garbage collection, security, etc. JVM is customizable and we can use java options to customize it. For example, allocating minimum and maximum memory to JVM. JVM is called virtual because it provides an interface that does not depend on the underlying operating system and machine hardware. This independence from hardware and the operating system makes java program write-once-run-anywhere.
+
+Q3.How many types of memory areas are allocated by JVM?
+
+:- The memory in the JVM is divided into 5 different parts: 
+     1. Class(Method) Area
+     2. Heap
+     3. Stack
+     4. Program Counter Register
+     5. Native Method Stack
+
+Q4.What is JIT compiler?
+
+:- The Just-In-Time (JIT) compiler is an integral component of the Java Runtime Environment (JRE) that enhances the runtime performance of Java applications. It achieves this optimization by dynamically translating Java bytecode into efficient native machine code during program execution, thereby reducing the overhead of interpretation and improving overall execution speed.
+
+Q5.What are the various access specifiers in Java?
+
+:- In java There Are 4 type of Access Specifiers:- 1.private, 2.protected, 3.default and 4.public.
+
+Q6.What is a compiler in Java?
+
+:- Compiler -> It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouputTo convert the HLL code to MLL code compiler will scan the HLL code only once.
+
+Q7.Explain the types of variables in Java?
+
+:- A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type. Variable is a name of memory location. There are three types of variables in java: local, instance and static.
+
+ 1)Local Variable:-
+A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists. A local variable cannot be defined with "static" keyword.
+
+2)Instance Variable:-
+A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.
+
+3) Static variable
+A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.
+
+Q8.What are the Datatypes in Java?
+
+Data types in Java are of different sizes and values that can be stored in the variable that is made as per convenience and circumstances to cover up all test cases. Java has two categories in which data types are segregated 
+
+1.Primitive Data Type: such as boolean, char, int, short, byte, long, float, and double.
+2.Non-Primitive Data Type or Object Data type: such as String, Array, etc.
+
+Q9.What are the identifiers in java?
+
+:- identifer is a name in java program. identifer can be classname,methodname,variablename,labelname.
+
+Q10.Explain the architecture of JVM?
+
+.Classloader − Loads the class file into the JVM.
+
+.Class Area − Storage areas for a class elements structure like fields, method data, code of method etc.
+
+.Heap − Runtime storage allocation for objects.
+
+.Stack − Storage for local variables and partial results. A stack contains frames and allocates one for each thread. Once a thread gets completed, this frame also gets destroyed. It also plays roles in method invocation and returns.
+
+.PC Registers − Program Counter Registers contains the address of an instruction that JVM is currently executing.
+
+.Execution Engine − It has a virtual processor, interpreter to interpret bytecode instructions one by one and a JIT, just in time compiler.
+
+.Native method stack − It contains all the native methods used by the application.
+
+
+
+
+
+
